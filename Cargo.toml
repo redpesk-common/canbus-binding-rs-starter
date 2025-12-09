@@ -1,0 +1,25 @@
+[package]
+name = "can-starter"
+version = "0.1.0"
+edition = "2021"
+license = "GPL-3.0-only"
+publish = false
+
+[dependencies]
+serde = { version = "1", features = ["derive"], optional = true  }
+serde_json = {version= "1", optional = true }
+bitvec = { version = "1.0", default-features = false }
+bitflags = { version = "2"}
+sockcan_binding = { path ="../canbus-core-binding-rs/sockcan-binding"}
+sockcan_data    = { path ="../canbus-core-binding-rs/sockcan-data" }
+dbcapi          = { path ="../canbus-core-binding-rs/dbcapi" }
+lib_sockcan     = { path ="../canbus-core-rs/sockcan" }
+afbv4           = { path ="../afb-librust/afb-librs" }
+
+[lib]
+name = "afb_starter"
+crate-type = ["cdylib"]
+path = "src/starter.rs"
+
+[features]
+default = ["serde","serde_json"]
