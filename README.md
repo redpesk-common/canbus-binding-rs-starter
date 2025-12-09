@@ -1,7 +1,5 @@
 # canbus-binding-rs-starter
 
-Starter Rust binding to expose CAN bus signals through the AFB v4 framework, using the `canbus-core-binding-rs` stack.
-
 This project is meant as a minimal example of how to:
 
 - generate Rust code from a DBC file using `dbcparser-cli`,
