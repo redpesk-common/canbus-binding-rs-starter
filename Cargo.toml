@@ -4,6 +4,20 @@ version = "0.1.0"
 edition = "2021"
 license = "GPL-3.0-only"
 publish = false
+# NOTE:
+# - In starter / development mode, we fully disable the build script
+#   so we don't depend on `dbcparser` and a local DBC file.
+# - For a "production" setup (automatic code generation from DBC),
+#   comment out the next line and uncomment `build = "build.rs"` below.
+build = false
+#build = "build.rs"
+
+# NOTE:
+# - Enable this section only when using `build.rs` to generate Rust code
+#   from the DBC file at build time.
+# - Requires the `canforge-rs` workspace to be available at the given path.
+#[build-dependencies]
+#dbcparser = { path= "../../../canforge-rs/dbcparser"}
 
 [dependencies]
 serde = { version = "1", features = ["derive"], optional = true  }
