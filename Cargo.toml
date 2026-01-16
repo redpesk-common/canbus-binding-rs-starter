@@ -17,18 +17,18 @@ build = false
 #   from the DBC file at build time.
 # - Requires the `canforge-rs` workspace to be available at the given path.
 #[build-dependencies]
-#dbcparser = { path= "../../../canforge-rs/dbcparser"}
+#dbcparser = { git = "https://github.com/redpesk-common/canforge-rs.git", branch = "master" }
 
 [dependencies]
 serde = { version = "1", features = ["derive"], optional = true  }
 serde_json = {version= "1", optional = true }
 bitvec = { version = "1.0", default-features = false }
 bitflags = { version = "2"}
-sockcan_binding = { path ="../canbus-core-binding-rs/sockcan-binding"}
-sockcan_data    = { path ="../canbus-core-binding-rs/sockcan-data" }
-dbcapi          = { path ="../canbus-core-binding-rs/dbcapi" }
-lib_sockcan     = { path ="../canbus-core-rs/sockcan" }
-afbv4           = { path ="../afb-librust/afb-librs" }
+sockcan_binding = { git = "https://github.com/redpesk-common/canbus-core-binding-rs.git", branch = "master" }
+sockcan_data    = { git = "https://github.com/redpesk-common/canbus-core-binding-rs.git", branch = "master" }
+dbcapi          = { git = "https://github.com/redpesk-common/canbus-core-binding-rs.git", branch = "master" }
+lib_sockcan     = { git = "https://github.com/redpesk-common/canbus-core-rs.git", branch = "master" }
+afbv4           = { git = "https://github.com/redpesk-common/afb-librust.git", branch = "master" }
 
 [lib]
 name = "afb_starter"
