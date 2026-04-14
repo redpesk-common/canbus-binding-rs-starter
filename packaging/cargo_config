@@ -1,0 +1,30 @@
+[source.crates-io]
+replace-with = "vendored-sources"
+
+[source."git+https://github.com/oxibus/can-dbc?tag=v8.0.0"]
+git = "https://github.com/oxibus/can-dbc"
+tag = "v8.0.0"
+replace-with = "vendored-sources"
+
+[source."git+https://github.com/redpesk-common/afb-librust?branch=master"]
+git = "https://github.com/redpesk-common/afb-librust"
+branch = "master"
+replace-with = "vendored-sources"
+
+[source."git+https://github.com/redpesk-common/canbus-core-rs.git?branch=master"]
+git = "https://github.com/redpesk-common/canbus-core-rs.git"
+branch = "master"
+replace-with = "vendored-sources"
+
+[source."git+https://github.com/redpesk-common/canbus-core-binding-rs.git?branch=master"]
+git = "https://github.com/redpesk-common/canbus-core-binding-rs.git"
+branch = "master"
+replace-with = "vendored-sources"
+
+[source."git+https://github.com/redpesk-common/canforge-rs.git?branch=master"]
+git = "https://github.com/redpesk-common/canforge-rs.git"
+branch = "master"
+replace-with = "vendored-sources"
+
+[source.vendored-sources]
+directory = "vendor"
