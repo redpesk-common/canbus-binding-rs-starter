@@ -45,7 +45,7 @@ For a quick start you can use `dbcparser-cli` from the command line to generate 
 Clone the workspace that contains both the core CAN bindings and this starter example:
 
 ```bash
-git clone git@git.ovh.iot:incubator/canforge-rs.git
+git clone https://github.com/redpesk-common/canforge-rs.git
 cd canforge-rs
 ```
 

@@ -1,6 +1,6 @@
 # developer guide: local overrides for git dependencies (canforge-rs and afb-librust)
 
-Repository: `git@git.ovh.iot:redpesk/redpesk-common/canbus-binding-rs-starter.git`
+Repository: `https://github.com/redpesk-common/canbus-binding-rs-starter.git`
 
 This project consumes Rust crates hosted in external git repositories. For day-to-day development, contributors should be able to work with **local checkouts** of those repositories **without modifying this project’s sources**.
 
