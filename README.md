@@ -54,7 +54,7 @@ cd canforge-rs
 From the workspace root (where `dbcparser-cli` is available as a path dependency):
 
 ```bash
-cargo install --path dbcparser-cli
+cargo install --path dbcparser-cli --locked
 ```
 
 If this is your first `cargo install`, Cargo will typically install binaries into `$HOME/.cargo/bin`.
