@@ -77,7 +77,7 @@ dbcparser-cli --help
 Go to the `canbus-binding-rs-starter` directory (or wherever your starter binding lives). Then run:
 
 ```bash
-dbcparser-cli --uid Starter --in ./starter.dbc --out ./src/__starter.rs --whitelist "280,599,614"
+dbcparser-cli --uid Starter --in ./starter.dbc --out ./src/__starter.rs
 ```
 
 Where:
@@ -142,6 +142,14 @@ canplayer -v -l i -g 10 -I ./starter.log
 ```
 
 Typical setup for a virtual CAN interface might look like:
+
+Dependencies
+
+```bash
+dnf install kernel-modules-extra iproute kmod
+```
+
+Configure:
 
 ```bash
 sudo modprobe vcan
