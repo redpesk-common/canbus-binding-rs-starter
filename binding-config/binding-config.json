@@ -12,7 +12,7 @@
       "path": "${CARGO_TARGET_DIR}/debug/deps/libafb_sockcan.so",
       "info": "RUST sockbmc/can APIs",
       "sock_api": "sockcan",
-      "sock_evt": "sockbmc"
+      "event_uid": "sockbmc"
     },
     {
       "uid": "starter",
@@ -20,7 +20,7 @@
       "info": "RUST afb-can-starter-binding APIs",
       "dbc_api": "starter",
       "sock_api": "sockbmc",
-      "sock_evt": "sockcan"
+      "sock_evt": "sockbmc"
     }
   ]
 }
