@@ -50,7 +50,8 @@ pub fn binding_init(rootv4: AfbApiV4, jconf: JsoncObj) -> Result<&'static AfbApi
         .set_info(config.info)
         .set_permission(AfbPermission::new(to_static_str(config.acls.to_owned())))
         .seal(false)
-        .require_api(config.sock_api);
+        .require_api(config.sock_api)
+        .set_concurrency(false);
 
     // Instantiate the DBC message pool for the starter CAN network,
     // and register verbs/events for each message/signal defined in the DBC.
